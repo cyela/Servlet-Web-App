@@ -679,7 +679,7 @@ public class UserDAO {
 		 Class.forName("com.mysql.jdbc.Driver");
 		 String dbName = "muscle";
 		 String userName = "root";
-		 String password = "Telugu@1";
+		 String password = "*******";
 		 String hostname = "localhost";
 		 String port = "3306";
 		 String jdbcUrl = "jdbc:mysql://" + hostname + ":" + port + "/" + dbName +
