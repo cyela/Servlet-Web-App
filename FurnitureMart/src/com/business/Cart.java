@@ -2,10 +2,13 @@ package com.business;
 
 import java.io.Serializable;
 
-public class Cart implements Serializable{
-	
-	
-	String productId,quantity,dateAdded,orderId,price;
+public class Cart implements Serializable {
+
+	private String productId;
+	private String quantity;
+	private String dateAdded;
+	private String orderId;
+	private String price;
 
 	public String getProductId() {
 		return productId;
@@ -59,7 +62,5 @@ public class Cart implements Serializable{
 	public Cart() {
 		super();
 	}
-	
-	
-	
+
 }

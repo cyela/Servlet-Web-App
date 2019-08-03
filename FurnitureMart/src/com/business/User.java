@@ -3,12 +3,16 @@ package com.business;
 import java.io.Serializable;
 import java.sql.Blob;
 
-public class User implements Serializable{
-	private String firstName,lastName,email,password,salt,gender;
-	private String phonenumber,DOB;
-	Blob image;
-
-	
+public class User implements Serializable {
+	private String firstName;
+	private String lastName;
+	private String email;
+	private String password;
+	private String salt;
+	private String gender;
+	private String phonenumber;
+	private String DOB;
+	private Blob image;
 
 	public Blob getImage() {
 		return image;
@@ -82,8 +86,6 @@ public class User implements Serializable{
 		this.phonenumber = phonenumber;
 	}
 
-	
-
 	public User(String firstName, String lastName, String email, String password, String salt, String gender,
 			String phonenumber, String dOB, Blob image) {
 		super();
@@ -108,10 +110,4 @@ public class User implements Serializable{
 				+ ", salt=" + salt + ", gender=" + gender + ", phonenumber=" + phonenumber + ", DOB=" + DOB + "]";
 	}
 
-	
-
-	
-
-	
-	
 }

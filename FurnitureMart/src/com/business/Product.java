@@ -1,14 +1,15 @@
 package com.business;
 
-import java.io.InputStream;
 import java.io.Serializable;
 import java.sql.Blob;
 
-
-public class Product implements Serializable{
-	String productId,description,productname,
-	productprice,quantity;
-	Blob prodImage;
+public class Product implements Serializable {
+	private String productId;
+	private String description;
+	private String productname;
+	private String productprice;
+	private String quantity;
+	private Blob prodImage;
 
 	public Blob getProdImage() {
 		return prodImage;
@@ -58,9 +59,6 @@ public class Product implements Serializable{
 		this.quantity = quantity;
 	}
 
-
-	
-
 	@Override
 	public String toString() {
 		return "Product [productId=" + productId + ", description=" + description + ", productname=" + productname
@@ -82,6 +80,4 @@ public class Product implements Serializable{
 		super();
 	}
 
-
-	
 }

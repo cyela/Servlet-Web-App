@@ -2,9 +2,13 @@ package com.business;
 
 import java.io.Serializable;
 
-public class OrderPlaced implements Serializable{
+public class OrderPlaced implements Serializable {
 
-	String orderId,email,totalCost,orderDate,orderStatus;
+	private String orderId;
+	private String email;
+	private String totalCost;
+	private String orderDate;
+	private String orderStatus;
 
 	public String getOrderId() {
 		return orderId;
@@ -58,5 +62,5 @@ public class OrderPlaced implements Serializable{
 	public OrderPlaced() {
 		super();
 	}
-	
+
 }
